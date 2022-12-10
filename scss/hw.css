@@ -1,0 +1,51 @@
+.sh-list li {
+  list-style: none;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.sh-list .active {
+  transition: all 0.5s;
+}
+.sh-list .active:hover {
+  background-color: aqua;
+}
+
+.alert-box-yellow, .alert-box-blue, .alert-box-green {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
+.alert-box-green {
+  background-color: rgb(167, 255, 195);
+}
+
+.alert-box-blue {
+  background-color: rgb(167, 193, 255);
+}
+
+.alert-box-yellow {
+  background-color: rgb(255, 249, 145);
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: 1px solid #eee;
+}/*# sourceMappingURL=hw.css.map */

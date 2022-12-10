@@ -1,0 +1,31 @@
+.profile{
+  width: 150px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px rgb(77, 77, 77);
+}
+.title{
+  font-size: 27px; 
+  font-family:'Courier New', Courier, monospace; 
+  letter-spacing: -1px; 
+  text-align: center;
+}
+.content{
+  text-align: center; 
+  margin-top: -20px;
+}
+.box{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 200px;
+  padding: 40px;
+  background-color: cadetblue;
+  border: 3px solid rgb(173, 196, 196);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  box-shadow: 10px 10px darkgray;
+}

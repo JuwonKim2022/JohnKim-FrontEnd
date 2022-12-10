@@ -1,0 +1,406 @@
+@font-face{
+  font-family: '작명';
+  src : url(../font/NanumSquareR.ttf);
+}
+
+div{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+
+/*네비게이션*/
+.nav-container{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 5px;
+}
+.nav-item{
+  margin-right: 10px;
+}
+
+.test{
+  width: 100vw;
+  height: 10vh;
+  background-color: grey;
+}
+
+.main-bg{
+  width: 100%;
+  height: 500px;
+  background-image: url(../media/shoes.jpg), url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /*스크롤 해도 이미지 고정*/
+  filter: brightness(110%) saturate(120%); /*단독필터*/
+  padding: 1px;
+}
+.main-title{
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+  text-align: center;
+}
+.main-content{
+  color: white;
+  text-align: center;
+}
+.main-btn{
+  /*좌표이동*/
+  position: relative;
+  top: 10px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.explain-box{
+  position: relative;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60%;
+  max-width: 600px;
+
+  text-align: center;
+  background-color: rgb(179, 179, 179);
+  padding: 1px 20px;
+  border-radius: 5px;
+}
+
+
+/*회원가입*/
+.input-box{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 40px;
+  text-align: left;
+  width: 400px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.input-box p{
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.sbm button{
+  padding: 7px 35px 7px 35px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  display: block;
+  margin-left: auto;
+}
+.sbm-label{
+  position: relative;
+  top: 25px;
+}
+.sbm button:hover{
+  cursor: pointer;
+}
+
+.fname{
+  width: 50%;
+  float: left;
+  padding-right: 12px;
+}
+.lname{
+  width: 50%;
+  float: left;
+  padding-left: 12px;
+}
+
+.w-100 input, textarea{
+  border: 1px rgb(199, 199, 199) solid;
+  height: 30px;
+  width: 100%;
+}
+.w-100 textarea{
+  height: 200px;
+}
+.w-50 input{
+  border: 1px rgb(199, 199, 199) solid;
+  height: 30px;
+  width: 100%;
+}
+
+.flex-container{
+  display: flex;
+  /*flex-direction: column; /*세로형*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(211, 242, 211);
+  margin: 5px;
+}
+
+.product-container{
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.product-container div{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.product-container h4{
+  margin-bottom: 0;
+}
+.product-container p{
+  margin-top: 10px;
+}
+.product-container i{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background-color: burlywood;
+  color: white;
+  margin-top: 50px;
+}
+
+.shop-bg{
+  background-color: rgb(176, 176, 176);
+  padding: 20px;
+}
+.shop-container{
+  display: flex;
+  max-width: 700px;
+  margin: auto;
+}
+.shop-item{
+  width: 33%;
+  padding: 10px;
+}
+.shop-item img{
+  width: 100%;
+  display: block;
+}
+/*animation*/
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*반투명*/
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier();
+}
+.overlay:hover{
+  opacity: 1;
+}
+
+.overlay-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay2{
+  margin-top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  transition: all 1s;
+  color: white;
+  font-size: 50px;
+}
+.overlay-wrap:hover .overlay2{
+  margin-top: 50%;
+}
+
+/*슈도클래스*/
+.pseudo::first-line{
+  font-size: 25px;
+}
+.pseudo::first-letter{
+  color: rgb(136, 5, 5);
+  font-size: 30px;
+}
+.product-container::after{
+  content: '';
+  display: block;
+  float: none;
+}
+.input-file::file-selector-button{
+  background-color: skyblue;
+  border: none;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+.input-file::file-selector-button:hover{
+  background-color: rgb(43, 66, 167);
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 5px;
+}
+
+.input-file2[type=file]::-webkit-file-upload-button{
+  background-color: blueviolet;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+}
+input[type=input2]::-webkit-input-placeholder{
+  color: red;
+}
+input[type=range]{
+  appearance: none;
+}
+input[type=range]::-webkit-slider-thumb{
+  appearance: none;
+  background-color: green;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/*복잡한 애니메이션*/
+.ani-text{
+  text-align: center;
+}
+.ani-text:hover{
+  animation-name: wadagada;
+  animation-duration: 1s;
+}
+@keyframes wadagada {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-100px);
+  }
+  75%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.ani-button{
+  padding: 15px 20px;
+  font-size: 20px;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-button:hover{
+  animation-name: hundul;
+  animation-duration: 1s;
+}
+@keyframes hundul {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-10deg);
+  }
+  75%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.ani-x{
+  margin: 150px auto;
+  text-align: center;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer;
+}
+.ani-x:hover{
+  animation-duration: 1s;
+  animation-name: exu;
+  animation-fill-mode: forwards;
+}
+@keyframes exu {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+.ani-navbar{
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transform: translateX(-170px);
+  transition: all 0.7s;
+}
+.ani-navbar:hover{
+  transform: translateX(0px);
+  text-align: center;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(-250px);
+  }
+  50%{
+    transform: translateX(20px) skewX(-30deg);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.ani-navbar:hover p{
+  animation-name: slide;
+  animation-duration: 0.7s;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-title{
+    font-size: 30px;
+  }
+  .nav-item{
+    font-size: 12px;
+  }
+  .main-content{
+    font-size: 10px;
+  }
+  .product-container div{
+    width: 50%;
+  }
+}
+
+

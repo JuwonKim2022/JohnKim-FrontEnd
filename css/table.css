@@ -1,0 +1,78 @@
+table{
+  border-collapse: collapse;
+}
+
+.cart-bg{
+  background-color: rgb(178,204,214);
+  width: 700px;
+  padding: 50px;
+}
+.cart-table{
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.footer-btn a{
+  color: rgb(18,56,97);
+  position: relative;
+  top: 20px;
+}
+
+.db-font{
+  color: rgb(18,56,97);
+  font-weight: 900;
+}
+.cart-table td,th{
+  padding: 2px 10px 2px 10px;
+}
+
+.cart-table th{
+  border-bottom: 1px rgb(178,204,214) solid;
+  color: #94a4b8;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  padding: 10px;
+}
+.cart-table td{
+  border-bottom: 1px rgb(178,204,214) solid;
+  text-align: center;
+}
+
+.footer-btn button{
+  background-color: rgb(18,56,97);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+
+  display: block;
+  margin-left: auto;
+
+  cursor: pointer;
+}
+.footer-btn button:hover{
+  background-color: rgb(113, 43, 226);
+}
+.footer-btn button:focus{
+  background-color: rgb(26, 94, 167);
+}
+.footer-btn button:active{
+  background-color: rgb(248, 70, 26);
+}
+
+.btn-main{
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.bg-red{
+  background-color: rgb(248, 70, 26);
+}
+.bg-blue{
+  background-color: rgb(26, 94, 167);
+}

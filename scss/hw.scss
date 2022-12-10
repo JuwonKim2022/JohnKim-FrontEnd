@@ -1,0 +1,52 @@
+.sh-list {
+  li{
+    list-style: none;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #eee;
+  }
+  .active{
+    transition: all 0.5s;
+  }
+  .active:hover{
+    background-color: aqua;
+  }
+}
+
+%alt{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  margin-bottom: 5px
+}
+.alert-box-green{
+  @extend %alt;
+  background-color: rgb(167, 255, 195);
+}
+.alert-box-blue{
+  @extend %alt;
+  background-color: rgb(167, 193, 255);
+}
+.alert-box-yellow{
+  @extend %alt;
+  background-color: rgb(255, 249, 145);
+}
+
+@mixin roco($width, $padding) {
+  width: $width;
+  padding: $padding;
+  border: 1px solid #eee;
+}
+div {
+  box-sizing: border-box;
+}
+.row .col-6{
+  float: left;
+  @include roco(50%, 15px)
+}
+.row .col-4{
+  float: left;
+  @include roco(33.33%, 15px)
+}

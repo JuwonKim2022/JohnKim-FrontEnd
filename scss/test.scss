@@ -1,0 +1,56 @@
+@use '_reset'; /*@import*/
+
+$main-color : #2a4cb2;
+$basic-size : 16px;
+
+.background{
+  background-color: $main-color;
+  font-size: $basic-size - 2px;
+}
+.box{
+  color: $tree-color;
+  font-size: $basic-size + 3px;
+}
+
+.main-bg {
+  width: 100px;
+  h4{
+    font-size: 8px;
+  }
+  button{
+    color: orange;
+  }
+}
+
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+.btn-green{
+  @extend %btn;
+  background-color: green;
+}
+.btn-red{
+  @extend %btn;
+  background-color: red;
+}
+.btn-blue{
+  @extend %btn;
+  background-color: blue;
+}
+
+@mixin fontSize($a, $b, $c){
+  font-size: $a;
+  letter-spacing: $b;
+  #{$c}: 4px;
+}
+h2{
+  @include fontSize(30px, -1px, font-size);
+}
+h3{
+  @include fontSize(20px, -2px, font-size);
+}
+h4{
+  @include fontSize(10px, 1px, font-size);
+}
