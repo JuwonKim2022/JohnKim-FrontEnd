@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/js01.css">
+</head>
+<body>
+  <!-- 1강 -->
+  <h1 id="hello">Hello</h1>
+  <h1 id="basic">I`m a small man</h1>
+  <!-- 2강 - alert, 3강 functioin, 4강 parameter -->
+  <div class="alert-box" id="alert">
+    <p class="title1" id="pText">알림창</p> 
+    <button id="closeBtn">닫기</button>
+  </div>
+  <button onclick="userAlert('아이디를 입력하세요','block')">버튼1</button>
+  <button onclick="userAlert('비밀번호를 입력하세요','block')">버튼2</button>
+  <!-- 5강 classname selecter -->
+  <!--  -->
+  <script>
+    // 1강
+    document.getElementById('hello').innerHTML='Hi~!';
+    document.getElementById('hello').style.fontSize='16px';
+    document.getElementById('basic').innerHTML='I`m a big man.';
+    // 2강 - alert
+    // 3강 - function, 4강 - parameter
+    function userAlert(a,b){
+      document.getElementsByClassName('title1')[0].innerHTML = a;
+      document.getElementById('alert').style.display = b;
+    }
+    // 5강 - classname selecter
+    function openAlert(hole){
+      document.getElementById('alert').style.display = hole;
+    }
+    // 5강 - addEventListner()
+    document.getElementById('closeBtn').addEventListener('click', function(){
+      document.getElementById('alert').style.display = 'none';
+    });
+
+  </script>
+</body>
+</html>
