@@ -4,7 +4,7 @@
   height : 100%;
   position : fixed;
   background : rgba(0,0,0,0.5);
-  z-index : 5;
+  z-index : 6;
   padding: 30px;
   visibility: hidden;
   opacity: 0;
@@ -19,7 +19,18 @@
   visibility: visible;
   opacity: 1;
 }
+
 /* 네비게이션 */
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-brand{
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
 .list-group{
   display: none;
 }
@@ -31,3 +42,33 @@
   padding: 100px 20px;
   background-color: lightgray;
 }
+
+.darkMode{
+  background-color: black;
+  color: white;
+}
+.darkMode-bg{
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+/* slideshow */
+.slide-container{
+  width: 300vw;
+  transition: all 1s;
+}
+.slide-box{
+  width: 100vw;
+  float: left;
+}
+.slide-box img{
+  width: 100%;
+}
+
+/* 페이지 길이바 */
+/* .pageBar{
+  margin: 0;
+  background-color: brown;
+  height: 10px;
+  width: 100%;
+} */

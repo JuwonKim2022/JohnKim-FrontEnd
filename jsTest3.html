@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test2</title>
+</head>
+<body>
+<script>
+  let a;
+  let b;
+  function timeCal(a,b){
+    result = (a*60 + b)*1000;
+    return result;
+  }
+  console.log(timeCal(1,30));
+
+  function bigSale(c,d){
+    if(d === false){
+      result = (c*0.9);
+    } else if(d === true){
+      result = (c*0.9)-(15/10);
+    }
+    return result;
+  }
+  console.log(bigSale(100,true));
+  console.log(bigSale(100,false));
+  
+  
+</script> 
+</body>
+</html>
