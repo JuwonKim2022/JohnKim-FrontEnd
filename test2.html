@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="/css/test2.css">
+</head>
+<body>
+  <script>
+    let 출석부 = ['흥민','영희','철수','재석'];
+    function 이름찾기(name){
+      for(let i=0; i<4; i++){
+        if(name == 출석부[i]){
+          console.log('있어요.');
+        }
+      }
+    }
+
+    // 구구단();
+    function 구구단(){
+      for(let i=2; i<10; i++){
+        for(let j=1; j<10; j++){
+          result = (i * j);
+          console.log(result);
+        }
+      }
+    }
+    
+    // 성적계산
+    function 성적비교(arr,e){
+      let 총점 = 0;
+      for(let i=0; i<arr.length; i++){
+        총점 = 총점 + arr[i];
+      }
+      let 평균 = 총점/arr.length;
+      let 점수차 = (e - 평균);
+      if(점수차 < 0){
+        console.log('평균보다 '+점수차+'점이 떨어졌네요 재수추천');
+      } else if(점수차 > 0){
+        console.log('평균보다 '+점수차+'점 올랐네요.');
+      }
+    }
+    성적비교([10,20,30,40,50],40);
+    성적비교([10,20,30,40],40);
+    성적비교([40,40,40],20);
+  </script>
+</body>
+</html>
