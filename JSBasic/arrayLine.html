@@ -50,6 +50,22 @@
       return a*4
     });
     console.log(arrayComp);
+
+  // 13. 장바구니
+  // 로컬 스토리지 이용
+  // 1)저장
+  localStorage.setItem('이름','KimJW');
+  // 2)사용
+  localStorage.getItem('이름');
+  // 3)삭제
+  localStorage.removeItem('이름');
+  // 4)배열 임시 저장
+  let arr = [1,2,3];
+  let newArr = JSON.stringify(arr);
+  localStorage.setItem('num',newArr);
+  let 꺼낸거 = localStorage.getItem('num');
+  console.log(JSON.parse(꺼낸거));
+  console.log(JSON.parse(꺼낸거)[0]);
     
   </script>
   <!-- 부트스트랩 -->
